@@ -9,10 +9,10 @@ from textblob import TextBlob
 
 
 # Initialize the twitter api object
-api = twitter.Api(consumer_key='BZJP8nknA3eV0sJuQwah3wMgO',
-                  consumer_secret='7JbxEgpRP4ahG3z32fwD07z7qq4ZrNfRekVka835MJhi3tGxy8',
-                  access_token_key='62039010-RbEvFpWvEBfvYnJYUknx64nEuFuPVvBBd83GvpUbM',
-                  access_token_secret='RvNwmNaYxhSGE7wNfe3EiBuvZZolK91qrxd9b6Klo2FBP')
+api = twitter.Api(consumer_key={CONSUMER_KEY},
+                  consumer_secret={CONSUMER_SECRET},
+                  access_token_key={ACCESS_TOKENKEY},
+                  access_token_secret={ACCESS_TOKENSECRET})
 
 user = "khairulnazran"
 filename = user + "_tweet_sentiments.csv"
